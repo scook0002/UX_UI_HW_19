@@ -26,11 +26,11 @@
     <section class="section1">
         <a id="back"></a>
         <header>
-          <img src="images19/logo.png" alt="Logo">
+          <img class="image-container" src="images19/logo.png" data-src="images19/logo.png" data-hover="images19/homeicon.png" alt="Logo">
             <nav class="top_nav">
                 
                 <a class= "inactive grow" href="#"> About </a>
-                <a class= "inactive grow" href="#work"> Work </a>
+                <a class= "active" href="#work"> Work </a>
               <a class= "inactive grow" href="#"> Skills </a>
                 <a class= "inactive grow" href="#"> Contact  </a>
             </nav>
@@ -39,7 +39,8 @@
 
         <div class="Intro"> 
             <img src="images19/Profile Picture.jpg" alt="Sarah Cook" class="abc">
-            <h2 class="welcome"> Nice to meet you, I'm Sarah <br> UX | UI Designer </h2>
+            <h2 class="blue"> Nice to meet you, I'm Sarah <br> UX | UI Designer </h2>
+            <p id="section1"> My focus is on creating digital experiences that are fun, functional, & positive, while uplifting people to reach their fullest potential.</p>
             
             <!-- Animated Button -->
             <div class="center">
@@ -54,6 +55,16 @@
                 <!-- End of Animated Button-->
         </div>
 
+        <div class="social">
+            <img src="images19/Github.png" style="margin: 0px 10px" alt="GitHub">
+            <img src="images19/Linkedin.png" style="margin: 0px 10px" alt="LinkedIn">
+        </div>
+
+        <div class="arrow bounce">
+            <a href="#goDown">
+                <img src="images19/Down Arrow.png" alt="Arrow">
+            </a>
+        </div>
     </section>
 
     <!-- My UX Skills Section coded using CSS flex -->
@@ -88,15 +99,12 @@
 
                 
         </div>
-        <div>
+        <div class="myTools fade-in">
+            <h1 class="lightHeading"> My Tools </h1>
             <img src="images19/Dots.png" alt="Dots">
         </div>
-        <div class="myTools fade-in">
-            <h1 class="lightHeading"> </h1>
-            
-        </div>
 
-        <img class="fade-in four" src="images19/Tools.png" alt="Tools">
+            <img class="fade-in four" src="images19/Tools.png" alt="Tools">
 
     </section>
 
@@ -120,7 +128,8 @@
                 <h5 class="type"> Travel Planning App | 2022 </h5>
                 <h3 class="font2"> Mobile Design </h3>
                 <p id="section3"> Design a travel app that enables users to easily access a schedule/itinerary curated from selected travel plans and activities. </p>
-                <button class="project"> View Project </button>
+                <button class="project"> 
+                    <a class="aLink" href="https://docs.google.com/presentation/d/1Kccs8XXHEXEC6bfmVJqJ8Kn_CjwecIlhkJUTpVGMFXo/edit?usp=sharing"> View Project </a></button>
             </div>
 
             <div class="mockup fade-in zero2">
@@ -138,7 +147,7 @@
                 <picture>
                     <source media="(max-width: 799px)" srcset="images19/Hobbymobile.png"/>
                     <source media="(min-width: 800px)" srcset="images19/Hobbyapp.png"/>
-                    <img class="image" src="images19/Hobbyapp.png" style="padding-left: 22.5%;" alt="Hobby Mockup">
+                    <img class="image lazy" src="images19/Hobbyapp.png" style="padding-left: 22.5%;" alt="Hobby Mockup">
                 </picture>
             </div>
 
@@ -164,7 +173,7 @@
                 <picture>
                     <source media="(max-width: 799px)" srcset="images19/NAMIweb.png"/>
                     <source media="(min-width: 800px)" srcset="images19/MentalHealthWeb.png"/>
-                    <img class="image" src="images19/MentalHealthWeb.png" alt="Mental Health Mockup">
+                    <img class="image lazy" src="images19/MentalHealthWeb.png" alt="Mental Health Mockup">
                 </picture>
             </div>
 
@@ -181,6 +190,7 @@
         
         <a href="#back">
             <div class="backtotop">
+                <img src="images19/Double-Arrow.svg">
                 <h5> BACK TO TOP </h5>
             </div>
         </a>
@@ -204,7 +214,7 @@
                 </button>
             </div>
             <!-- End of Animated Button -->
-            <!-- <button class="solid-blue">FIND ME ON LINKEDIN</button> -->
+            <!-- <button class="solid-red">FIND ME ON LINKEDIN</button> -->
             
             <button class="no-fill">WRITE ME AN EMAIL</button>
         </div>
