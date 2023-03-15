@@ -106,6 +106,15 @@ img[src*="images18/Profile Picture.jpg"]{
   color:white;
 }
 
+#aboutMe {
+    color: #F07167;
+    font-style: normal;
+    font-weight: normal;
+    font-family: Bebas Neue;
+    font-size: 26px;
+    line-height: 60px;
+}
+
 /* UX Skills Section using FLEX */
 .section2{
     width: 100%;
