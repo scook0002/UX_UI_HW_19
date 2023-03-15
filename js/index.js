@@ -1,47 +1,26 @@
 console.log("Your index.js file is loaded correctly!");
 
-$(document).ready(function(){
-    $(".abc").fadeIn(1000);
-    $("#section1").fadeIn(3000);
-});
+ScrollReveal().reveal('.ProfilePicture', { delay: 500 });
+ScrollReveal().reveal('.Intro', { delay: 700 });
+ScrollReveal().reveal('.welcome', { delay: 900 });
+ScrollReveal().reveal('.outline', { delay: 1100 });
 
+ScrollReveal().reveal('.lightHeading', { delay: 1300 });
+ScrollReveal().reveal('.dots', { delay: 1500 });
+ScrollReveal().reveal('.MySkills', { delay: 1700 });
+ScrollReveal().reveal('.dots2', { delay: 1900 });
 
-$(".grow").mouseover(function(){
-    $(this).css("color","#3D8EBC");
-}).mouseout(function(){
-    $(this).css("color","#94989C");
-});
+ScrollReveal().reveal('.myTools', { delay: 2100 });
+ScrollReveal().reveal('.darkHeading', { delay: 2300 });
 
+ScrollReveal().reveal('.row1', { delay: 2500 });
+ScrollReveal().reveal('.mockup', { delaay: 2700 });
+ScrollReveal().reveal('.row2', { delay: 2900 });
+ScrollReveal().reveal('.mockup', { delay: 3100 });
+ScrollReveal().reveal('.row3', { delay: 3300 });
+ScrollReveal().reveal('.mockup', { delaay: 37000 });
 
-  $(".image-container").mouseover(function() {    
-    $(this).attr("src", $(this).attr("src").replace("Logo.png", "home.png"));
-}).mouseout(function() {
-    $(this).attr("src", $(this).attr("src").replace("home.png", "Logo.png"));
-});
-
-
-
-// Intersection Observer (Lazy Loading of My Skills & My Works)
-const faders = document.querySelectorAll(".fade-in");
-
-const appearOptions = {
-    threshold: 1,
-    rootMargin: "0px 0px 50px 0px"
-  };
-  
-  const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) 
-    {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) {
-        return;
-      } else {
-        entry.target.classList.add("appear");
-        appearOnScroll.unobserve(entry.target);
-      }
-    });
-  },
-  appearOptions);
-  
-  faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-  });
+ScrollReveal().reveal('.section4', { delay: 3900 });
+ScrollReveal().reveal('.backtotop', { delay: 4100 });
+ScrollReveal().reveal('.footertext', { delay: 4300 });
+ScrollReveal().reveal('.contact', { delay: 4500 });

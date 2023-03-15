@@ -7,8 +7,8 @@
 
     <title>Sarah Cook UX Portfolio</title>
 
-    <link href="images19/logo.png" rel="icon" type="image">
-    <link href="CSS19/style.css19" rel="stylesheet" type="text/css">
+    <link href="Images/logo.png" rel="icon" type="image">
+    <link href="CSS19/style.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    ScrollReveal({reset: true});
+</script>
+
 </head>
 <body>
 
@@ -26,88 +31,69 @@
     <section class="section1">
         <a id="back"></a>
         <header>
-          <img class="image-container" src="images19/logo.png" data-src="images19/logo.png" data-hover="images19/homeicon.png" alt="Logo">
+          <img src="images19/logo.png" alt="Logo">
             <nav class="top_nav">
                 
-                <a class= "inactive grow" href="#"> About </a>
-                <a class= "active" href="#work"> Work </a>
-              <a class= "inactive grow" href="#"> Skills </a>
-                <a class= "inactive grow" href="#"> Contact  </a>
+                <a class= "inactive" href="#about"> About </a>
+                <a class= "inactive" href="#work"> Work </a>
+              <a class= "inactive" href="#skills"> Skills </a>
+                <a class= "inactive" href="#contact"> Contact </a>
             </nav>
         </header>
 
 
         <div class="Intro"> 
-            <img src="images19/Profile Picture.jpg" alt="Sarah Cook" class="abc">
-            <h2 class="blue"> Nice to meet you, I'm Sarah <br> UX | UI Designer </h2>
-            <p id="section1"> My focus is on creating digital experiences that are fun, functional, & positive, while uplifting people to reach their fullest potential.</p>
+            <img src="images19/Profile Picture.jpg" alt="Sarah Cook" class="ProfilePicture">
+            <h2 class="welcome" id="about"> Nice to meet you, I'm Sarah <br> UX | UI Designer </h2>
             
-            <!-- Animated Button -->
-            <div class="center">
-                <button class="outline">
-                    <svg width="190px" height="55px" viewBox="0 0 190 55" class="border">
-                        <polyline points="189,1 189,54 1,54 1,1 189,1" class="bg-line" />
-                        <polyline points="189,1 189,54 1,54 1,1 189,1" class="hl-line" />
-                    </svg>
-                    <span>Read More</span>
-                </button>
-                </div>
-                <!-- End of Animated Button-->
+            <button class="outline"> Read more </button>
         </div>
 
-        <div class="social">
-            <img src="images19/Github.png" style="margin: 0px 10px" alt="GitHub">
-            <img src="images19/Linkedin.png" style="margin: 0px 10px" alt="LinkedIn">
-        </div>
-
-        <div class="arrow bounce">
-            <a href="#goDown">
-                <img src="images19/Down Arrow.png" alt="Arrow">
-            </a>
-        </div>
     </section>
 
     <!-- My UX Skills Section coded using CSS flex -->
-    <a id="goDown">
-    </a>
+    <a id="skills"></a>
     <section class="section2">
 
         <div id="desc" class="title">
             <h1 class="lightHeading"> My Skills </h1>
-            <img src="images19/Dots.png" alt="Dots">
+            <img src="images19/Dots.png" alt="Dots" class="dots">
         </div>
     
-        <div class="whatIDo fade-in">
+        <div class="MySkills">
 
 
-            <div id="desc1" class="description fade-in one">
+            <div id="desc1" class="description">
                 <h3 class="font2"> User Research </h3>
                 <p id="section2"> My approach to User Research is to always remain curious and to not enter the research with assumptions. Remaining open and curious allows me to absorb user insights like a sponge, which I can then use to guide my design process. During User Research, I use Miro, Google Drive, Documents, and Surveys to record and analyze user insights. </p>
             </div>
 
 
-            <div id="desc2" class="description fade-in two">
+            <div id="desc2" class="description">
                 <h3 class="font2"> User Empathy </h3>
                 <p id="section2"> My approach to User Empathy is to put the user at the center of attention. When I can solely focus on the user, I can gain a deep understanding of who they are and what is important to them. By empathizing with the user, I am better able to design digital experiences that exceed expectations, while meeting the users' wants, needs, and desires. </p>
             </div>
           
 
-            <div id="desc3" class="description fade-in three">
+            <div id="desc3" class="description">
                 <h3 class="font2"> Qualitative Interviews </h3>
                 <p id="section2"> My approach to Qualitative Interviews is to get into the mind of the user. I want to have a conversation as if I were talking with a friend to gain a deeper connection and understanding of my user. During Qualitative Interviews, it is essential that I create an Interview Script with questions that are open to facilitate an honest conversation. </p>
             </div>
 
                 
         </div>
-        <div class="myTools fade-in">
-            <h1 class="lightHeading"> My Tools </h1>
-            <img src="images19/Dots.png" alt="Dots">
+        <div>
+            <img src="images19/Dots.png" alt="Dots" class="dots2">
         </div>
 
-            <img class="fade-in four" src="images19/Tools.png" alt="Tools">
+        <div class="myTools">
+            <h1 class="lightHeading"> </h1>
+            
+        </div>
+
+        <img src="images19/Tools.png" alt="Tools">
 
     </section>
-
 
 
     <!-- My Work Section constructed using CSS Grid -->
@@ -115,24 +101,24 @@
     <section class="section3">
         
         
-        <div class="title fade-in">
+        <div class="title">
             <h1 class="darkHeading"> My Works </h1>
             <img src="images19/Dots.png" alt="Dots">
         </div>
     
     
-    <div class= "container">
+    <div class = "container">
 
         <div class="row1">
-            <div class="summary fade-in zero1">
-                <h5 class="h5Blue"> Travel Planning App | 2022 </h5>
+            <div class="summary">
+                <h5 class="type"> Travel Planning App | 2022 </h5>
                 <h3 class="font2"> Mobile Design </h3>
                 <p id="section3"> Design a travel app that enables users to easily access a schedule/itinerary curated from selected travel plans and activities. </p>
-                <button class="caseStudy"> 
-                    <a class="aLink" href="https://docs.google.com/presentation/d/1Kccs8XXHEXEC6bfmVJqJ8Kn_CjwecIlhkJUTpVGMFXo/edit?usp=sharing"> View Project </a></button>
+                <button class="project">
+                    <a class="alink" href="https://docs.google.com/presentation/d/1Kccs8XXHEXEC6bfmVJqJ8Kn_CjwecIlhkJUTpVGMFXo/edit?usp=sharing"> View Project </a></button>
             </div>
 
-            <div class="mockup fade-in zero2">
+            <div class="mockup">
                 <picture>
                     <source media="(max-width: 799px)" srcset="images19/Travelmobile.png"/>
                     <source media="(min-width: 800px)" srcset="images19/Travelapp.png"/>
@@ -143,38 +129,38 @@
 
 
         <div class="row2">
-            <div class="mockup fade-in zero1">
+            <div class="mockup">
                 <picture>
                     <source media="(max-width: 799px)" srcset="images19/Hobbymobile.png"/>
                     <source media="(min-width: 800px)" srcset="images19/Hobbyapp.png"/>
-                    <img class="image lazy" src="images19/Hobbyapp.png" style="padding-left: 22.5%;" alt="Hobby Mockup">
+                    <img class="image" src="images19/Hobbyapp.png" style="padding-left: 22.5%;" alt="Hobby Mockup">
                 </picture>
             </div>
 
-            <div class="summary fade-in zero2">
-                <h5 class="h5Blue"> Hobby Discovery App | 2022 </h5>
+            <div class="summary">
+                <h5 class="type"> Hobby Discovery App | 2022 </h5>
                 <h3 class="font2"> Mobile Design </h3>
                 <p id="section3"> Design a hobby discovery app that provides users with access to a variety of hobbies based on their interests, preferences, and unique life demands. Users are able to learn and track their progress within their desired hobbies. </p>
-                <button class="caseStudy"> 
-                    <a class="aLink" href="https://docs.google.com/presentation/d/1v-jVHKnHppKO53T7y1wab6gVMnZ_Hd1TlNW-mMg33p0/edit?usp=sharing"> View Project </a></button>
+                <button class="project">
+                    <a class="alink" href="https://docs.google.com/presentation/d/1v-jVHKnHppKO53T7y1wab6gVMnZ_Hd1TlNW-mMg33p0/edit?usp=sharing"> View Project </a></button>
             </div>
 
         </div>
 
 
         <div class="row3">
-            <div class="summary fade-in zero1">
-                <h5 class="h5Blue"> Non-Profit Mental Health Redesign | 2023 </h5>
+            <div class="summary">
+                <h5 class="type"> Non-Profit Mental Health Redesign | 2023 </h5>
                 <h3 class="font2"> Responsive Web Design </h3>
                 <p id="section3"> Redesign the NAMI (National Alliance on Mental Illness) website that allows users to find resources and additional information that helps them take first steps in their mental health journeys. </p>
-                <button class="caseStudy"> View Project </button>
+                <button class="project"> View Project </button>
             </div>
 
-            <div class="mockup fade-in zero2">
+            <div class="mockup">
                 <picture>
                     <source media="(max-width: 799px)" srcset="images19/NAMIweb.png"/>
                     <source media="(min-width: 800px)" srcset="images19/MentalHealthWeb.png"/>
-                    <img class="image lazy" src="images19/MentalHealthWeb.png" alt="Mental Health Mockup">
+                    <img class="image" src="images19/MentalHealthWeb.png" alt="Mental Health Mockup">
                 </picture>
             </div>
 
@@ -187,36 +173,23 @@
 
 
     <!-- Footer Section -->
-    <section class="section4">
+    <section class="section4" id="contact">
         
         <a href="#back">
             <div class="backtotop">
-                <img src="images19/Double-Arrow.svg">
                 <h5> BACK TO TOP </h5>
             </div>
         </a>
         
 
-        <div class="footertext fade-in four">
-            <h2 class="linen"> Connect with me!</h2>
+        <div class="footertext">
+            <h2 class="linen"> Connect with me! </h2>
             <h3 class="font1"> I'd love to chat more about my work and my goals.</h3>
         </div>
         
 
-        <div class="contact fade-in five">
-            <!-- Animated Button -->
-            <div class="center1">
-                <button class="solid-blue">
-                    <svg width="174px" height="36px" viewBox="0 0 174 36" class="border">
-                        <polyline points="173,1 173,35 1,35 1,1 173,1" class="bg-line" />
-                        <polyline points="173,1 173,35 1,35 1,1 173,1" class="hl-line" />
-                    </svg>
-                    <span>FIND ME ON LINKEDIN</span>
-                </button>
-            </div>
-            <!-- End of Animated Button -->
-            <!-- <button class="solid-red">FIND ME ON LINKEDIN</button> -->
-            
+        <div class="contact">
+            <button class="solid-red">FIND ME ON LINKEDIN</button>
             <button class="no-fill">WRITE ME AN EMAIL</button>
         </div>
         
