@@ -3,7 +3,9 @@ console.log("Your index.js file is loaded correctly!");
 ScrollReveal().reveal('.ProfilePicture', { delay: 500 });
 ScrollReveal().reveal('.Intro', { delay: 700 });
 ScrollReveal().reveal('.welcome', { delay: 900 });
-ScrollReveal().reveal('.outline', { delay: 1100 });
+ScrollReveal().reveal('.more', { delay: 1100 });
+ScrollReveal().reveal('.moretwo', { delay: 1100});
+ScrollReveal().reveal('.outline', { delay: 1500 });
 
 function myFunction() {
     document.getElementById("aboutMe").innerHTML = "Learn more about me!";
@@ -14,7 +16,7 @@ ScrollReveal().reveal('.dots', { delay: 700 });
 ScrollReveal().reveal('.MySkills', { delay: 900 });
 ScrollReveal().reveal('.dots2', { delay: 1100 });
 
-ScrollReveal().reveal('.myTools', { delay: 500 });
+ScrollReveal().reveal('.toolimage', { delay: 500 });
 ScrollReveal().reveal('.darkHeading', { delay: 700 });
 
 ScrollReveal().reveal('.row1', { delay: 500 });

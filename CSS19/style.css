@@ -25,9 +25,11 @@ img[src*="Images/logo.png"]{
     padding-left: 5%;
 }
 
-img[src*="images18/Profile Picture.jpg"]{
+img[src*="images19/Profile Picture.jpg"]{
     margin-top: 2.5%;
     padding-left: 5%;
+    width: 90%;
+    border-radius: 50%;
 }
 
 .top_nav{
@@ -39,7 +41,7 @@ img[src*="images18/Profile Picture.jpg"]{
     text-decoration: none;
     padding-left: 45px;
     font-family: Bebas Neue;
-    font-size: 17px;
+    font-size: 26px;
 }
 
 .inactive{
@@ -69,6 +71,27 @@ img[src*="images18/Profile Picture.jpg"]{
     font-size: 36px;
     line-height: 60px;
     padding-top: 30px;
+}
+
+.more {
+    color: #F07167;
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px; 
+    line-height: 50px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.moretwo {
+    color: #F07167;
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px; 
+    line-height: 50px;
+    padding-bottom: 20px;
 }
 
 #section1{
@@ -123,6 +146,10 @@ img[src*="images18/Profile Picture.jpg"]{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.dots {
+    padding-top: 40px;
 }
 
 .lightHeading{
@@ -199,6 +226,10 @@ img[src*="images18/Profile Picture.jpg"]{
     margin-top: 7.5%;
 }
 
+.dotstwo {
+    padding-top: 180px;
+}
+
 .myTools{
     height: 200px;
     margin-top: 4%;
@@ -222,6 +253,10 @@ img[src*="Images/Tools.png"]{
 /* My Work Section using GRID */
 .section3{
 background-color: white;
+}
+
+.dotsthree {
+    padding-top: 40px;
 }
 
 .darkHeading{
@@ -273,7 +308,7 @@ background-color: white;
     font-family: M Plus 1;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.05em;
     color: black;
@@ -292,14 +327,14 @@ background-color: white;
     font-family: M Plus 1;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
     background: none;
 }
 
 .project:hover {
-    background-color:black;
-  color:white;
+    background-color:#00AFB9;
+  color: black;
 }
 
 .summary{
@@ -318,16 +353,11 @@ background-color: white;
     padding-right: 5%;
 }
 
-.alink {
-    text-decoration: none;
-    color: inherit;
-}
-
 .type{
     font-family: Bebas Neue;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 19px;
     line-height: 16px;
     letter-spacing: 0.18538em;
     color: black;
@@ -401,8 +431,11 @@ h5{
 }
 
 .no-fill{
+    width: 174px;
+    height: 36px;
     color: white;
-    background: none;
+    background: #FED9B7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
     margin-left: 1%;
 }
